@@ -49,3 +49,32 @@ function findMax(...args) {
     return console.log(maxNumber)
 };
 findMax(2, 5, 7, 89, -3, 4, 6);
+
+
+// 6.Given three angles of a triange, your function should return if it is a scalen, isosceles, equilateral triangle or not a triangle at all
+
+
+function typeOfTraingle(ang1, ang2, ang3) {
+    if (ang1 + ang2 + ang3 > 180 || ang1 + ang2 + ang3 < 180) {
+        return console.log("Not a Traingle")
+    } else if (ang1 === ang2 && ang2 === ang3) {
+        return console.log("This an Equilateral Traingle")
+    } else if (ang1 == ang2 || ang2 === ang3 || ang3 === ang1) {
+        return console.log("This is an Isosceles traingle")
+    } else if (ang1 !== ang2 && ang2 !== ang3 && ang3 !== ang1) {
+        return console.log("This is a Scalene Traingle")
+    };
+};
+typeOfTraingle(30, 60, 90)
+
+
+
+// Medium
+
+// 1.Given an array, your function should return the length of the array
+
+function arrayLength(arr) {
+    return console.log(arr.length)
+}
+
+arrayLength([2, 3, 4, 5, 6, 7])
