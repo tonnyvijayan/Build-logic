@@ -73,8 +73,102 @@ typeOfTraingle(30, 60, 90)
 
 // 1.Given an array, your function should return the length of the array
 
+function arrayLength1(...args) {
+    let i = 0;
+    while (args[0] !== undefined) {
+        args.pop(args[0])
+        i = i + 1;
+    }
+    return console.log(i)
+}
+arrayLength1(2, 3, 4, 5, 6, 7, 8)
+arrayLength1("hello", "how", "are", "you")
+
 function arrayLength(arr) {
     return console.log(arr.length)
 }
+arrayLength2(2, 3, 4, 5, 6, 7, 8)
 
-arrayLength([2, 3, 4, 5, 6, 7])
+// 2.Given an array and an item, your function should return the index at which the item is present.
+
+function indexOf(arr, number) {
+    for (i = 0; i < arr.length; i++) {
+        if (arr[i] === number) {
+            return console.log(i)
+
+        }
+
+    }
+}
+
+indexOf([2, 3, 4, 5, 6, 7], 7)
+
+
+// 3.Given an array and two numbers, your function should replace all entries of first number in an array with the second number.
+
+function replace(array, number, replace) {
+    for (i = 0; i < array.length; i++) {
+        if (array[i] === number) {
+            array[i] = replace;
+
+        }
+    }
+    return console.log(array)
+}
+replace([5, 4, 8, 2, 5, 4, 1, 7, 9, 4, 9], 4, 33)
+
+
+// 4.Given two arrays, your function should return single merged array.
+
+function arrayMerge(array1, array2) {
+    let mergedArray = [...array1, ...array2];
+    return console.log(mergedArray)
+}
+arrayMerge([2, 3, 4, 5, 6], [6, 5, 3])
+
+
+function arrayMerge1(array1, array2) {
+    const mergedArray = array1.concat(array2)
+    return console.log(mergedArray)
+}
+arrayMerge1([2, 3, 4, 5, 6], [6, 5, 3])
+
+
+// 5.Given a string and an index, your function should return the character present at that index in the string.
+
+function charAt(string, index) {
+    let strArr = string.split("");
+    return console.log(strArr[index])
+}
+
+charAt("cardamon", 5)
+
+// 6.Given two dates, your function should return which one comes before the other
+
+
+function minDate(date1, date2) {
+    let date1Array = date1.split("/");
+    let date2Array = date2.split("/");
+
+    if (parseInt(date1Array[2]) < parseInt(date2Array[2]) || parseInt(date1Array[2]) === parseInt(date2Array[2])) {
+
+        if (parseInt(date1Array[1]) < parseInt(date2Array[1]) || parseInt(date1Array[1]) === parseInt(date2Array[1])) {
+
+            if (parseInt(date1Array[0]) < parseInt(date2Array[0]) || parseInt(date1Array[0]) === parseInt(date2Array[0])) {
+                console.log(`${date1} is min`)
+
+            } else {
+                console.log(`${date2} is min `)
+            };
+
+        } else {
+            console.log(`${date2} is min `)
+        };
+    } else {
+        console.log(`${date2} is min `)
+    };
+
+
+};
+
+minDate("1/11/2020", "25/05/2012");
