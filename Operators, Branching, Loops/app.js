@@ -1,9 +1,9 @@
 //1. Write a program to add 5 numbers. The value of numbers are num1=5, num2=13, num3=7, num4=21 and num5=48.
 
 let numberAdder = (n1, n2, n3, n4, n5) => {
-    return n1 + n2 + n3 + n4 + n5;
+    return console.log(n1 + n2 + n3 + n4 + n5);
 };
-console.log(numberAdder(5, 13, 7, 21, 48));
+numberAdder(5, 13, 7, 21, 48);
 
 
 //2. Write a program to take a number input from user and determine whether the number is odd or even.
@@ -29,17 +29,20 @@ console.log(`${num1} is minimum and ${num2} is maximum`)
 
 // 4.Write a program to find the maximum out of three given numbers. The numbers are num1=8, num2=23 and num3=17
 
-let num1 = 8;
-let num2 = 2;
-let num3 = 7;
+let findMax = (num1, num2, num3) => {
 
-if (num3 > num2 && num3 > num1) {
-    console.log("num3 is the max")
-} else if (num2 > num3 && num2 > num1) {
-    console.log("num2 is max")
-} else {
-    console.log("num1 is max")
-};
+    if (num3 > num2 && num3 > num1) {
+        console.log("num3 is the max")
+    } else if (num2 > num3 && num2 > num1) {
+        console.log("num2 is max")
+    } else {
+        console.log("num1 is max")
+    };
+
+}
+
+findMax(8, 2, 7);
+
 
 // 5.Write a program to find the minimum out of three given numbers. The numbers are num1=35, num2=29 and num3=46.
 
