@@ -1,38 +1,38 @@
 // 1.Write a program that converts the string into uppercase
 
-// const upperCase = (string) => {
-//     return console.log(string.toUpperCase())
-// }
+const upperCase = (string) => {
+    return console.log(string.toUpperCase())
+}
 
-// upperCase("32")
+upperCase("32")
 
 
 // 2.Write a program that reads two strings and append first string to the second. So if first string is Good second string is Morning , the program should print MorningGood
 
-// const appendString = (stringOne, stringTwo) => {
+const appendString = (stringOne, stringTwo) => {
 
-//     return console.log(`${stringTwo}${stringOne}`)
+    return console.log(`${stringTwo}${stringOne}`)
 
-// }
+}
 
-// appendString("Good", "morning")
+appendString("Good", "morning")
 
 
 // 3.Program that reads string and count number of characters present in the string
 
-// const stringCount = (string) => {
-//     let arrString = string.split("")
-//     return console.log(arrString.length)
-// }
-// stringCount("hello")
+const stringCount = (string) => {
+    let arrString = string.split("")
+    return console.log(arrString.length)
+}
+stringCount("hello")
 
 
 // 4.Write a program that converts string like "124" to 124
-// const strConvert = (string) => {
-//     console.log(parseInt(string))
-// }
+const strConvert = (string) => {
+    console.log(parseInt(string))
+}
 
-// strConvert("1234")
+strConvert("1234")
 
 // 5.Write a program to delete all vowels from a string. Assume string is not more than 80 characters long
 
